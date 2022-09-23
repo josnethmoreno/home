@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8" />
@@ -8,42 +8,55 @@
   <title>Josneth Moreno | Home Page</title>
 </head>
 
-<body>
+<body class="bg-[color:var(--primary)]">
   <main>
-    <header class="sticky top-0 border-b border-black">
-      <div class="container-md mx-auto max-w-[544px] border-x border-black px-2">
+    <header class="flex sticky top-0 border-b border-[color:var(--secondary)]">
+      <div
+        class="flex items-center w-full text-[color:var(--primary)] whitespace-nowrap overflow-hidden hover:bg-[color:var(--secondary)] hover:text-[color:var(--primary)] duration-300">
+        <h1 class="ml-2 w-full text-center"> Hi!, I'm a <b>UI Designer</b> and <b>Frontend Developer</b></h1>
+        <p class="hidden ml-2 w-full text-center">I use my passion and skills to create digital products</p>
+      </div>
+      <div class="container-md mx-auto min-w-[544px] border-x border-[color:var(--secondary)] px-2">
         <nav class="flex gap-6 justify-center py-4">
-          <a href="#top">Home</a>
-          <a href="#work" class="text-gray-500 hover:text-black">Work</a>
-          <a href="#skills" class="text-gray-500 hover:text-black">Skills</a>
-          <a href="#contact" class="text-gray-500 hover:text-black">Contact</a>
+          <a href="#top" class="text-[color:var(--secondary)]">Home</a>
+          <a href="#work" class="text-[color:var(--secondary)] opacity-50 hover:opacity-100">Work</a>
+          <a href="#skills" class="text-[color:var(--secondary)] opacity-50 hover:opacity-100">Skills</a>
+          <a href="#contact" class="text-[color:var(--secondary)] opacity-50 hover:opacity-100">Contact</a>
         </nav>
+      </div>
+      <div class="w-full">
+        <button class="w-full h-full hover:bg-[color:var(--secondary)] duration-300"></button>
       </div>
     </header>
     <figure>
-      <div class="container-md mx-auto max-w-[544px] border-x border-black">
+      <div class="container-md mx-auto max-w-[544px] border-x border-[color:var(--secondary)]">
         <img src="./img/home.png" alt="home-background">
       </div>
     </figure>
-    <section>
-      <div class="container-md mx-auto max-w-[544px] border-x border-black px-6 py-6">
-        <p class="font-semibold text-justify leading-normal">
-          Hey que tal? Te comento un poco de mí, soy Josneth Moreno, nací en Venezuela, me apasiona el mundo digital y
-          algún día me gustaría crear una startup que de solución a un problema.
-          <span class="block mt-2 text-gray-500 hover:text-black">
-            Además soy un Diseñador de interfaces y
-            luego un desarrollador de las mismas, es decir, un Frontend developer. Al momento de crear una interfaz de
-            usuario, me encargo de que esta sea estetica, intuitiva, funcional y accessible.
-          </span>
+    <section id="top">
+      <div class="container-md mx-auto max-w-[544px] border-x border-[color:var(--secondary)] px-4 py-4">
+        <p class="text-3xl">
+          Me gusta crear interfaces <span class="font-bold">estéticas</span>, <span class="font-bold">intuitivas</span>,
+          <span class="font-extralight italic">funcionales</span> y <span
+            class="font-extralight italic">accesibles</span>, con una increíble <span class="font-bold">experiencia
+            digital</span>.
         </p>
       </div>
     </section>
-    <section>
-      <h3 class="border-y border-black text-center text-2xl">
-        <div class="container-md mx-auto max-w-[544px] border-x border-black px-4 py-4">
-          <span class="opacity-0">MY WORK</span>
+    <section id="work">
+      <h3 class="border-y border-[color:var(--secondary)] text-center text-2xl">
+        <div class="header container-md mx-auto max-w-[544px] border-x border-[color:var(--secondary)] px-4 py-4">
+          <h2 class="font-bold opacity-0 text-[color:var(--primary)]">MY WORK</h2>
         </div>
       </h3>
+      <div class="container-md mx-auto max-w-[544px] border-x border-[color:var(--secondary)] px-4 py-4">
+        <button class="toggle flex border-4 border-[color:var(--secondary)] w-[94px] h-auto p-1" id="toggleWork"
+          data-value="dev">
+          <span
+            class="flex items-center justify-center w-1/2 aspect-square text-xs font-bold text-[color:var(--primary)] z-10">UI</span>
+          <span class="flex items-center justify-center w-1/2 aspect-square text-xs font-bold z-10">DEV</span>
+        </button>
+      </div>
     </section>
   </main>
   <script type="module" src="/main.js"></script>
