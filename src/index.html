@@ -255,6 +255,38 @@
         </div>
       </div>
     </section>
+    <section id="contact">
+      <div class="border-y border-[color:var(--secondary)] text-center text-2xl">
+        <div class="header container-md mx-auto max-w-[544px] border-x border-[color:var(--secondary)] px-4 py-4">
+          <h2 class="font-bold opacity-0 text-[color:var(--primary)]">CONTACT</h2>
+        </div>
+      </div>
+      <div class="container-md mx-auto max-w-[544px] border-x border-[color:var(--secondary)] px-4 py-4">
+        <p class="text-xl">
+          ¿Tienes algún proyecto en mente? <span class="font-bold">Contáctame!</span> <br> Y creemos
+          juntos la siguiente <span class="font-semibold italic">experiencia digital.</span>
+        </p>
+        <form class="max-w-[242px] mx-auto mt-8 font-medium flex flex-col gap-4" action="">
+          <input
+            class="w-full outline-none border-b-4 border-[color:var(--secondary)] placeholder:text-[color:var(--secondary)]"
+            type="text" name="name" placeholder="Nombre">
+          <input
+            class="w-full outline-none border-b-4 border-[color:var(--secondary)] placeholder:text-[color:var(--secondary)]"
+            type="mail" name="email" placeholder="Email">
+          <textarea
+            class="w-full outline-none border-b-4 border-[color:var(--secondary)] placeholder:text-[color:var(--secondary)]"
+            name="message" rows="3" placeholder="Message"></textarea>
+          <button class="flex justify-between bg-[color:var(--secondary)] p-2" type="submit">
+            Send
+            <svg class="w-6 h-6 inline-block group-hover:rotate-[-45deg] duration-200" fill="none" stroke="currentColor"
+              viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3">
+              </path>
+            </svg>
+          </button>
+        </form>
+      </div>
+    </section>
   </main>
   <script type="module" src="/main.js"></script>
 </body>
