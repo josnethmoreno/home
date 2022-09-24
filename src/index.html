@@ -266,24 +266,27 @@
           ¿Tienes algún proyecto en mente? <span class="font-bold">Contáctame!</span> <br> Y creemos
           juntos la siguiente <span class="font-semibold italic">experiencia digital.</span>
         </p>
-        <form class="max-w-[242px] mx-auto mt-8 font-medium flex flex-col gap-4" action="">
+        <form class="max-w-[242px] mx-auto mt-8 font-medium flex flex-col gap-4" id="form"
+          action="https://getform.io/f/cca0a9d1-9f65-42d9-9a58-31ad17d6af1b" method="POST">
           <input
             class="w-full outline-none border-b-4 border-[color:var(--secondary)] placeholder:text-[color:var(--secondary)]"
-            type="text" name="name" placeholder="Nombre">
+            type="text" id="name" name="name" placeholder="Nombre">
           <input
             class="w-full outline-none border-b-4 border-[color:var(--secondary)] placeholder:text-[color:var(--secondary)]"
-            type="mail" name="email" placeholder="Email">
+            type="email" id="email" name="email" placeholder="Email">
           <textarea
             class="w-full outline-none border-b-4 border-[color:var(--secondary)] placeholder:text-[color:var(--secondary)]"
-            name="message" rows="3" placeholder="Message"></textarea>
-          <button class="flex justify-between bg-[color:var(--secondary)] p-2" type="submit">
-            Send
-            <svg class="w-6 h-6 inline-block group-hover:rotate-[-45deg] duration-200" fill="none" stroke="currentColor"
+            id="message" name="message" rows="3" placeholder="Mensaje"></textarea>
+          <button
+            class="flex justify-between p-2 bg-[color:var(--secondary)] hover:text-[color:var(--primary)]  duration-200">
+            Enviar
+            <svg class="w-6 h-6 inline-block group-hover:rotate-[-45deg]" fill="none" stroke="currentColor"
               viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3">
               </path>
             </svg>
           </button>
+          <div id="formStatus"></div>
         </form>
       </div>
     </section>
