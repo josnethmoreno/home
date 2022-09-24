@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" class="scroll-smooth">
 
 <head>
   <meta charset="UTF-8" />
@@ -8,37 +8,34 @@
   <title>Josneth Moreno | Home Page</title>
 </head>
 
-<body class="bg-[color:var(--primary)] text-[color:var(--secondary)]">
+<body class="bg-[color:var(--primary)] text-[color:var(--secondary)] relative">
   <main>
-    <header class="flex sticky top-0 border-b border-[color:var(--secondary)] z-50">
-      <div
-        class="flex items-center w-full text-[color:var(--primary)] bg-[color:var(--primary)] whitespace-nowrap overflow-hidden hover:bg-[color:var(--secondary)] hover:text-[color:var(--primary)] duration-200">
-        <h1 class="ml-2 pr-4 w-full text-right text-[color:var(--primary)]">
-          Hi!, I'm a <b>Designer</b> and <b>Developer</b>
-        </h1>
+    <header
+      class="w-full fixed top-0 flex h-[4.2rem] border-y border-[color:var(--secondary)] bg-[color:var(--primary)] z-50">
+      <div class="hidden md:block w-full hover:bg-[color:var(--secondary)]">
+        <h1 class="flex items-center justify-end pr-4 w-full h-full">Josneth Moreno</h1>
       </div>
-      <div
-        class="container-md mx-auto min-w-[544px] border-x border-[color:var(--secondary)] px-2 bg-[color:var(--primary)]">
-        <nav class="flex gap-6 justify-center py-4">
-          <a href="#top">Home</a>
-          <a href="#work" class="opacity-50 hover:opacity-100">Work</a>
-          <a href="#skills" class="opacity-50 hover:opacity-100">Skills</a>
-          <a href="#contact" class="opacity-50 hover:opacity-100">Contact</a>
-        </nav>
-      </div>
-      <div class="w-full">
-        <button class="w-full h-full bg-[color:var(--primary)] hover:bg-[color:var(--secondary)] duration-200"></button>
+      <nav
+        class="relative flex justify-center items-center gap-3 w-full md:min-w-[544px] md:max-w-[544px] md:border-x border-[color:var(--secondary)] text-[color:var(--secondary)]">
+        <a href="#top">Home</a>
+        <a href="#work">Work</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+        <button class="absolute right-2 w-6 aspect-square bg-[color:var(--secondary)] md:hidden"></button>
+      </nav>
+      <div class="hidden md:block w-full">
+        <button class="w-full h-full hover:bg-[color:var(--secondary)]"></button>
       </div>
     </header>
     <figure>
       <div class="container-md mx-auto max-w-[544px] border-x border-[color:var(--secondary)]">
-        <img src="./img/home.png" alt="home-background">
+        <img class="" src="./img/home.jpg" alt="home-background">
       </div>
     </figure>
     <section id="home">
-      <div class="container-md mx-auto max-w-[544px] border-x border-[color:var(--secondary)] px-4 py-4">
+      <div class="container-md mx-auto max-w-[544px] border-x border-[color:var(--secondary)] px-4 md:px-8 py-4">
         <p class="text-3xl font-light">
-          Me gusta crear interfaces <br><span class="font-semibold">estéticas</span>, <span
+          Me gusta crear interfaces <span class="font-semibold">estéticas</span>, <span
             class="font-semibold">intuitivas</span>,
           <span class="font-extralight italic">funcionales</span> y <span
             class="font-extralight italic">accesibles</span>, con una increíble <span class="font-semibold">experiencia
@@ -49,7 +46,7 @@
     <section id="work">
       <div class="border-y border-[color:var(--secondary)] text-center text-2xl">
         <div class="header container-md mx-auto max-w-[544px] border-x border-[color:var(--secondary)] px-4 py-4">
-          <h2 class="font-bold opacity-0 text-[color:var(--primary)]">WORK</h2>
+          <h2 class="font-bold">WORK</h2>
         </div>
       </div>
       <div class="container-md mx-auto max-w-[544px] border-x border-[color:var(--secondary)] pt-4">
@@ -64,11 +61,12 @@
           <div class="hidden">
             <div class="px-4 py-6 border-t border-[color:var(--secondary)]">
               <a class="flex w-full justify-between group" href="#">
-                <span class="font-medium">
+                <p class="inline-block font-medium">
                   <i class="circle inline-block w-2 aspect-square rounded-full bg-[color:var(--secondary)] mr-2"></i>
-                  Landibo | Home page portfolio UX/UI Designer's</span>
+                  Landibo <span class="hidden md:inline-block">| Home page portfolio UX/UI Designer's </span>
+                </p>
                 <svg
-                  class="w-6 h-6 inline-block text-[color:var(--primary)] group-hover:text-[color:var(--secondary)] group-hover:rotate-[-45deg] duration-200"
+                  class="w-6 h-6 inline-block md:text-[color:var(--primary)] md:group-hover:text-[color:var(--secondary)] rotate-[-45deg]"
                   fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3">
                   </path>
@@ -77,11 +75,12 @@
             </div>
             <div class="px-4 py-6 border-t border-[color:var(--secondary)]">
               <a class="flex w-full justify-between group" href="#">
-                <span class="font-medium">
+                <p class="inline-block font-medium">
                   <i class="circle inline-block w-2 aspect-square rounded-full bg-[color:var(--secondary)] mr-2"></i>
-                  Singleton | Home page portfolio for Developer's</span>
+                  Singleton <span class="hidden md:inline-block"> | Home page portfolio for Developer's </span>
+                </p>
                 <svg
-                  class="w-6 h-6 inline-block text-[color:var(--primary)] group-hover:text-[color:var(--secondary)] group-hover:rotate-[-45deg] duration-200"
+                  class="w-6 h-6 inline-block md:text-[color:var(--primary)] md:group-hover:text-[color:var(--secondary)] rotate-[-45deg]"
                   fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3">
                   </path>
@@ -90,11 +89,12 @@
             </div>
             <div class="px-4 py-6 border-t border-[color:var(--secondary)]">
               <a class="flex w-full justify-between group" href="#">
-                <span class="font-medium"> <i
-                    class="circle inline-block w-2 aspect-square rounded-full bg-[color:var(--secondary)] mr-2"></i>
-                  Emma | Home page portfolio for Product designer's</span>
+                <p class="inline-block font-medium">
+                  <i class="circle inline-block w-2 aspect-square rounded-full bg-[color:var(--secondary)] mr-2"></i>
+                  Emma <span class="hidden md:inline-block"> | Home page portfolio for Product designer's </span>
+                </p>
                 <svg
-                  class="w-6 h-6 inline-block text-[color:var(--primary)] group-hover:text-[color:var(--secondary)] group-hover:rotate-[-45deg] duration-200"
+                  class="w-6 h-6 inline-block md:text-[color:var(--primary)] md:group-hover:text-[color:var(--secondary)] rotate-[-45deg]"
                   fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3">
                   </path>
@@ -103,11 +103,12 @@
             </div>
             <div class="px-4 py-6 border-t border-[color:var(--secondary)]">
               <a class="flex w-full justify-between group" href="#">
-                <span class="font-medium">
+                <p class="inline-block font-medium">
                   <i class="circle inline-block w-2 aspect-square rounded-full bg-[color:var(--secondary)] mr-2"></i>
-                  Orca | Multi-purpose design system</span>
+                  Orca <span class="hidden md:inline-block"> | Multi-purpose design system </span>
+                </p>
                 <svg
-                  class="w-6 h-6 inline-block text-[color:var(--primary)] group-hover:text-[color:var(--secondary)] group-hover:rotate-[-45deg] duration-200"
+                  class="w-6 h-6 inline-block md:text-[color:var(--primary)] md:group-hover:text-[color:var(--secondary)] rotate-[-45deg]"
                   fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3">
                   </path>
@@ -118,11 +119,12 @@
           <div class="hidden">
             <div class="px-4 py-6 border-t border-[color:var(--secondary)]">
               <a class="flex w-full justify-between group" href="#">
-                <span class="font-medium">
+                <p class="inline-block font-medium">
                   <i class="circle inline-block w-2 aspect-square rounded-full bg-[color:var(--secondary)] mr-2"></i>
-                  Singleton | A minimal portfolio template for developers</span>
+                  Singleton <span class="hidden md:inline-block"> | A minimal portfolio template for developers </span>
+                </p>
                 <svg
-                  class="w-6 h-6 inline-block text-[color:var(--primary)] group-hover:text-[color:var(--secondary)] group-hover:rotate-[-45deg] duration-200"
+                  class="w-6 h-6 inline-block md:text-[color:var(--primary)] md:group-hover:text-[color:var(--secondary)] rotate-[-45deg]"
                   fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3">
                   </path>
@@ -131,11 +133,13 @@
             </div>
             <div class="px-4 py-6 border-t border-[color:var(--secondary)]">
               <a class="flex w-full justify-between group" href="#">
-                <span class="font-medium">
+                <p class="inline-block font-medium">
                   <i class="circle inline-block w-2 aspect-square rounded-full bg-[color:var(--secondary)] mr-2"></i>
-                  Weather app | App to view the weather conditions of cities</span>
+                  Weather app <span class="hidden md:inline-block"> | App to view the weather conditions of cities
+                  </span>
+                </p>
                 <svg
-                  class="w-6 h-6 inline-block text-[color:var(--primary)] group-hover:text-[color:var(--secondary)] group-hover:rotate-[-45deg] duration-200"
+                  class="w-6 h-6 inline-block md:text-[color:var(--primary)] md:group-hover:text-[color:var(--secondary)] rotate-[-45deg]"
                   fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3">
                   </path>
@@ -144,11 +148,12 @@
             </div>
             <div class="px-4 py-6 border-t border-[color:var(--secondary)]">
               <a class="flex w-full justify-between group" href="#">
-                <span class="font-medium"> <i
-                    class="circle inline-block w-2 aspect-square rounded-full bg-[color:var(--secondary)] mr-2"></i>
-                  Wordle game | A clone of the wordle game</span>
+                <p class="inline-block font-medium">
+                  <i class="circle inline-block w-2 aspect-square rounded-full bg-[color:var(--secondary)] mr-2"></i>
+                  Wordle game <span class="hidden md:inline-block"> | A clone of the wordle game </span>
+                </p>
                 <svg
-                  class="w-6 h-6 inline-block text-[color:var(--primary)] group-hover:text-[color:var(--secondary)] group-hover:rotate-[-45deg] duration-200"
+                  class="w-6 h-6 inline-block md:text-[color:var(--primary)] md:group-hover:text-[color:var(--secondary)] rotate-[-45deg]"
                   fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3">
                   </path>
@@ -157,11 +162,12 @@
             </div>
             <div class="px-4 py-6 border-t border-[color:var(--secondary)]">
               <a class="flex w-full justify-between group" href="#">
-                <span class="font-medium">
+                <p class="inline-block font-medium">
                   <i class="circle inline-block w-2 aspect-square rounded-full bg-[color:var(--secondary)] mr-2"></i>
-                  Github Search Engine | A github developer search engine.</span>
+                  Github Search Engine <span class="hidden md:inline-block"> | A github developer search engine. </span>
+                </p>
                 <svg
-                  class="w-6 h-6 inline-block text-[color:var(--primary)] group-hover:text-[color:var(--secondary)] group-hover:rotate-[-45deg] duration-200"
+                  class="w-6 h-6 inline-block md:text-[color:var(--primary)] md:group-hover:text-[color:var(--secondary)] rotate-[-45deg]"
                   fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3">
                   </path>
@@ -175,7 +181,7 @@
     <section id="skills">
       <div class="border-y border-[color:var(--secondary)] text-center text-2xl">
         <div class="header container-md mx-auto max-w-[544px] border-x border-[color:var(--secondary)] px-4 py-4">
-          <h2 class="font-bold opacity-0 text-[color:var(--primary)]">SKILLS</h2>
+          <h2 class="font-bold">SKILLS</h2>
         </div>
       </div>
       <div class="container-md mx-auto max-w-[544px] border-x border-[color:var(--secondary)] pt-4">
@@ -258,12 +264,13 @@
     <section id="contact">
       <div class="border-y border-[color:var(--secondary)] text-center text-2xl">
         <div class="header container-md mx-auto max-w-[544px] border-x border-[color:var(--secondary)] px-4 py-4">
-          <h2 class="font-bold opacity-0 text-[color:var(--primary)]">CONTACT</h2>
+          <h2 class="font-bold">CONTACT</h2>
         </div>
       </div>
       <div class="container-md mx-auto max-w-[544px] border-x border-[color:var(--secondary)] px-4 py-4">
         <p class="text-xl">
-          ¿Tienes algún proyecto en mente? <span class="font-bold">Contáctame!</span> <br> Y creemos
+          ¿Tienes algún proyecto en mente? <span class="font-bold">Contáctame!</span> <br class="hidden md:block"> Y
+          creemos
           juntos la siguiente <span class="font-semibold italic">experiencia digital.</span>
         </p>
         <form class="max-w-[242px] mx-auto mt-8 font-medium flex flex-col gap-4" id="form"
@@ -277,8 +284,7 @@
           <textarea
             class="w-full outline-none border-b-4 border-[color:var(--secondary)] placeholder:text-[color:var(--secondary)]"
             id="message" name="message" rows="3" placeholder="Mensaje"></textarea>
-          <button
-            class="flex justify-between p-2 bg-[color:var(--secondary)] hover:text-[color:var(--primary)]  duration-200">
+          <button class="flex justify-between p-2 bg-[color:var(--secondary)] hover:text-[color:var(--primary)] ">
             Enviar
             <svg class="w-6 h-6 inline-block group-hover:rotate-[-45deg]" fill="none" stroke="currentColor"
               viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -286,6 +292,15 @@
               </path>
             </svg>
           </button>
+          <div>
+            <input class="appearance-none" type="checkbox" name="ux" id="ux">
+            <input class="appearance-none" type="checkbox" name="startup" id="startup">
+            <input class="appearance-none" type="checkbox" name="landing" id="landing">
+            <input class="appearance-none" type="checkbox" name="app" id="app">
+            <input class="appearance-none" type="checkbox" name="agency" id="agency">
+            <input class="appearance-none" type="checkbox" name="frontend" id="frontend">
+            <input class="appearance-none" type="checkbox" name="friends" id="friends">
+          </div>
           <div id="formStatus"></div>
         </form>
       </div>
