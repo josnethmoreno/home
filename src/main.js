@@ -1,5 +1,41 @@
 import './style.css'
 
+const button = document.getElementById('button')
+const buttonTwo = document.getElementById('buttonTwo')
+const homeImg = document.getElementById('homeImg')
+
+const changeHomeImg = (theme) => {
+	const img = theme === 'light' ? './img/home.jpg' : './img/home-invert.jpg'
+	homeImg.src = img
+}
+
+const loadTheme = () => {
+	if (!localStorage.theme) {
+		localStorage.theme = 'light'
+	}
+	const theme = localStorage.theme
+	document.documentElement.classList.add(theme)
+	changeHomeImg(theme)
+}
+
+const changeTheme = () => {
+	if (localStorage.theme === 'light') {
+		document.documentElement.classList.add('dark')
+		document.documentElement.classList.remove('light')
+		localStorage.theme = 'dark'
+		changeHomeImg(localStorage.theme)
+		return
+	}
+	document.documentElement.classList.add('light')
+	document.documentElement.classList.remove('dark')
+	localStorage.theme = 'light'
+	changeHomeImg(localStorage.theme)
+}
+
+button.addEventListener('click', changeTheme)
+buttonTwo.addEventListener('click', changeTheme)
+window.addEventListener('load', loadTheme)
+
 const contentWork = document.getElementById('contentWork')
 const contentSkills = document.getElementById('contentSkills')
 const toggleWork = document.getElementById('toggleWork')
