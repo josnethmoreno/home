@@ -1,10 +1,5 @@
 import './style.css'
 
-const buttonTheme = document.getElementById('btnMd')
-const buttonThemeSm = document.getElementById('btnSm')
-
-buttonTheme.addEventListener('click', changeTheme)
-
 const contentWork = document.getElementById('contentWork')
 const contentSkills = document.getElementById('contentSkills')
 const toggleWork = document.getElementById('toggleWork')
