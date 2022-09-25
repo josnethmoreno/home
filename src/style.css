@@ -123,6 +123,25 @@ textarea {
 	background-color: transparent;
 }
 
+input:active {
+	outline: none;
+}
+
 input[type='checkbox'] {
 	appearance: none;
+	display: block;
+	padding: 0 0.3rem;
+	font-size: 14px;
+	color: var(--secondary);
+	border: 1px solid var(--secondary);
+	cursor: pointer;
+}
+
+input[type='checkbox']:checked {
+	color: var(--primary);
+	background-color: var(--secondary);
+}
+
+input[type='checkbox']::before {
+	content: attr(name);
 }

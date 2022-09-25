@@ -11,7 +11,7 @@
 <body class="bg-[color:var(--primary)] text-[color:var(--secondary)] relative">
   <main>
     <header
-      class="w-full fixed top-0 flex h-[4.2rem] border-y border-[color:var(--secondary)] bg-[color:var(--primary)] z-50">
+      class="w-full fixed top-0 flex h-[4.2rem] border-b border-[color:var(--secondary)] bg-[color:var(--primary)] z-50">
       <div class="hidden md:block w-full hover:bg-[color:var(--secondary)]">
         <h1 class="flex items-center justify-end pr-4 w-full h-full">Josneth Moreno</h1>
       </div>
@@ -21,10 +21,10 @@
         <a href="#work">Work</a>
         <a href="#skills">Skills</a>
         <a href="#contact">Contact</a>
-        <button class="absolute right-2 w-6 aspect-square bg-[color:var(--secondary)] md:hidden"></button>
+        <button class="absolute right-2 w-6 aspect-square bg-[color:var(--secondary)] md:hidden" id="btnSm"></button>
       </nav>
       <div class="hidden md:block w-full">
-        <button class="w-full h-full hover:bg-[color:var(--secondary)]"></button>
+        <button class="w-full h-full hover:bg-[color:var(--secondary)]" id="btnMd"></button>
       </div>
     </header>
     <figure>
@@ -284,6 +284,15 @@
           <textarea
             class="w-full outline-none border-b-4 border-[color:var(--secondary)] placeholder:text-[color:var(--secondary)]"
             id="message" name="message" rows="3" placeholder="Mensaje"></textarea>
+          <div class="flex flex-wrap gap-1">
+            <input type="checkbox" name="ui" id="ui">
+            <input type="checkbox" name="startup" id="startup">
+            <input type="checkbox" name="landing" id="landing">
+            <input type="checkbox" name="agency" id="agency">
+            <input type="checkbox" name="frontend" id="frontend">
+            <input type="checkbox" name="app" id="app">
+            <input type="checkbox" name="friends" id="friends">
+          </div>
           <button class="flex justify-between p-2 bg-[color:var(--secondary)] hover:text-[color:var(--primary)] ">
             Enviar
             <svg class="w-6 h-6 inline-block group-hover:rotate-[-45deg]" fill="none" stroke="currentColor"
@@ -292,15 +301,7 @@
               </path>
             </svg>
           </button>
-          <div>
-            <input class="appearance-none" type="checkbox" name="ux" id="ux">
-            <input class="appearance-none" type="checkbox" name="startup" id="startup">
-            <input class="appearance-none" type="checkbox" name="landing" id="landing">
-            <input class="appearance-none" type="checkbox" name="app" id="app">
-            <input class="appearance-none" type="checkbox" name="agency" id="agency">
-            <input class="appearance-none" type="checkbox" name="frontend" id="frontend">
-            <input class="appearance-none" type="checkbox" name="friends" id="friends">
-          </div>
+
           <div id="formStatus"></div>
         </form>
       </div>

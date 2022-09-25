@@ -1,5 +1,10 @@
 import './style.css'
 
+const buttonTheme = document.getElementById('btnMd')
+const buttonThemeSm = document.getElementById('btnSm')
+
+buttonTheme.addEventListener('click', changeTheme)
+
 const contentWork = document.getElementById('contentWork')
 const contentSkills = document.getElementById('contentSkills')
 const toggleWork = document.getElementById('toggleWork')
@@ -51,20 +56,31 @@ function formSubmit(e) {
 	const name = document.getElementById('name').value
 	const email = document.getElementById('email').value
 	const message = document.getElementById('message').value
+	const ui = document.getElementById('ui').checked
+	const startup = document.getElementById('startup').checked
+	const landing = document.getElementById('landing').checked
+	const app = document.getElementById('app').checked
+	const agency = document.getElementById('agency').checked
+	const frontend = document.getElementById('frontend').checked
+	const friends = document.getElementById('friends').checked
 
 	if (!name.trim() || !email.trim() || !message.trim())
 		return (formStatus.innerHTML =
 			'<div class="flex"><svg class="w-6 h-6 mr-2 text-yellow-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg> Por favor rellena los campos</div>')
 
 	const formData = new FormData()
-
 	formData.append('name', name)
 	formData.append('usermail', email)
 	formData.append('message', message)
+	formData.append('ui', ui)
+	formData.append('startup', startup)
+	formData.append('landing', landing)
+	formData.append('app', app)
+	formData.append('agency', agency)
+	formData.append('frontend', frontend)
+	formData.append('friends', friends)
 
-	console.log(formData)
-
-	fetch('https://getform.io/f/cca0a9d1-9f65-42d9-9a58-31ad17d6af1b', {
+	fetch('https://getform.io/f/70eb8b59-ca4f-4583-8e28-1e5dfba0f978', {
 		method: 'POST',
 		body: formData,
 	})
