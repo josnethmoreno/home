@@ -118,6 +118,11 @@ div:hover > h1::before {
 	display: flex;
 }
 
+input,
+textarea {
+	background-color: transparent;
+}
+
 input[type='checkbox'] {
 	appearance: none;
 }
