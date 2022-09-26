@@ -11,7 +11,7 @@
 <body class="bg-[color:var(--primary)] text-[color:var(--secondary)] relative" id="top">
   <main>
     <header
-      class="w-full fixed top-0 flex h-[4.2rem] border-b border-[color:var(--secondary)] bg-[color:var(--primary)] z-50">
+      class="w-full sticky top-0 flex h-[4.2rem] border-b border-[color:var(--secondary)] bg-[color:var(--primary)] z-50">
       <div class="hidden md:block w-full hover:bg-[color:var(--secondary)]">
         <h1 class="flex items-center justify-end pr-4 w-full h-full">Josneth Moreno</h1>
       </div>
@@ -29,7 +29,7 @@
       </div>
     </header>
     <figure>
-      <div class="container-md mx-auto max-w-[544px] border-x border-[color:var(--secondary)]">
+      <div class="container-md mx-auto max-w-[544px] border-x border-[color:var(--secondary)]" id="canvasContainer">
         <img class="" src="./img/home.jpg" alt="home-background" id="homeImg">
       </div>
     </figure>
@@ -235,6 +235,7 @@
             </svg>
             <svg class="h-8 text-[color:var(--secondary)]" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
               viewBox="0 0 16 16">
+              <title>Bootstrap</title>
               <path
                 d="M6.375 7.125V4.658h1.78c.973 0 1.542.457 1.542 1.237 0 .802-.604 1.23-1.764 1.23H6.375zm0 3.762h1.898c1.184 0 1.81-.48 1.81-1.377 0-.885-.65-1.348-1.886-1.348H6.375v2.725z" />
               <path
@@ -269,10 +270,9 @@
         </div>
       </div>
       <div class="container-md mx-auto max-w-[544px] border-x border-[color:var(--secondary)] px-4 py-8">
-        <p class="text-xl">
-          ¿Tienes algún proyecto en mente? <span class="font-bold">Contáctame!</span> <br class="hidden md:block"> Y
-          creemos
-          juntos la siguiente <span class="font-semibold italic">experiencia digital.</span>
+        <p class="text-3xl">
+          ¿Tienes algún proyecto en mente? <span class="font-bold">Contáctame!</span> Y
+          creemos juntos la siguiente <span class="font-semibold italic">experiencia digital.</span>
         </p>
         <form class="max-w-[242px] mx-auto mt-8 font-medium flex flex-col gap-4" id="form"
           action="https://getform.io/f/cca0a9d1-9f65-42d9-9a58-31ad17d6af1b" method="POST">
