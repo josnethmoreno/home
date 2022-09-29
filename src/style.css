@@ -19,7 +19,7 @@ h1 {
 }
 
 h1::before {
-	content: 'Designer and Developer';
+	content: 'UI Designer and Frontend Dev';
 	position: absolute;
 	right: 1rem;
 	color: var(--primary);
@@ -85,12 +85,11 @@ div:hover > h1::before {
 	height: 100%;
 	aspect-ratio: 1 / 1;
 	background-color: var(--secondary);
-	transition: 0.4s;
+	transition: 0.4s transform;
 }
 
 .toggle[data-value='ui'] > div span:nth-child(1) {
 	color: var(--primary);
-	transition: 0.3s;
 }
 
 .toggle[data-value='dev'] > div::before {
@@ -99,7 +98,6 @@ div:hover > h1::before {
 
 .toggle[data-value='dev'] > div span:nth-child(2) {
 	color: var(--primary);
-	transition: 0.4s;
 }
 
 #contentWork[data-content='ui'] div:nth-child(1) {
@@ -144,4 +142,14 @@ input[type='checkbox']:checked {
 
 input[type='checkbox']::before {
 	content: attr(name);
+}
+
+.cursor[data-hover='true'] {
+	width: 2rem;
+	height: 2rem;
+	transition: 0.2s;
+}
+
+.cursor[data-hover='true'] div {
+	background-color: transparent;
 }

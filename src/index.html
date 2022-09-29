@@ -11,12 +11,12 @@
 <body class="bg-[color:var(--primary)] text-[color:var(--secondary)] relative" id="top">
   <main>
     <header
-      class="w-full sticky top-0 flex h-[4.2rem] border-b border-[color:var(--secondary)] bg-[color:var(--primary)] z-50">
+      class="w-full sticky top-0 flex h-[4.2rem] border-b border-[color:var(--secondary)] bg-[color:var(--primary)] z-30">
       <div class="hidden md:block w-full hover:bg-[color:var(--secondary)]">
-        <h1 class="flex items-center justify-end pr-4 w-full h-full">Josneth Moreno</h1>
+        <h1 class="hidden lg:flex items-center justify-end pr-4 w-full h-full">Josneth Moreno</h1>
       </div>
       <nav
-        class="relative flex justify-center items-center gap-3 w-full md:min-w-[544px] md:max-w-[544px] md:border-x border-[color:var(--secondary)] text-[color:var(--secondary)]">
+        class="relative flex justify-center items-center gap-6 w-full md:min-w-[544px] md:max-w-[544px] md:border-x border-[color:var(--secondary)] text-[color:var(--secondary)]">
         <a href="#top">Home</a>
         <a href="#work">Work</a>
         <a href="#skills">Skills</a>
@@ -34,7 +34,7 @@
       </div>
     </figure>
     <section id="home">
-      <div class="container-md mx-auto max-w-[544px] border-x border-[color:var(--secondary)] px-4 md:px-8 py-8">
+      <div class="container-md mx-auto max-w-[544px] border-x border-[color:var(--secondary)] px-4 md:px-6 py-8">
         <p class="text-3xl font-light">
           Me gusta crear interfaces <span class="font-semibold">estéticas</span>, <span
             class="font-semibold">intuitivas</span>,
@@ -308,9 +308,9 @@
         </form>
       </div>
     </section>
-    <footer>
+    <footer class="border-t border-[color:var(--secondary)]">
       <div
-        class="flex justify-between container-md mx-auto max-w-[544px] border border-[color:var(--secondary)] px-4 py-6">
+        class="flex justify-between container-md mx-auto max-w-[544px] border-x border-[color:var(--secondary)] px-4 py-6">
         <p class="text-xs"> Created by <span class="font-semibold">Josneth Moreno</span></p>
         <div class="flex gap-3">
           <a href="">
@@ -337,6 +337,9 @@
         </div>
       </div>
     </footer>
+    <div class="cursor fixed top-0 w-6 h-6 z-50 rounded-full" data-hover="false">
+      <div class="bg-[color:var(--secondary)] w-full h-full rounded-full border border-[color:var(--secondary)]"></div>
+    </div>
   </main>
   <script type="module" src="/main.js"></script>
 </body>
