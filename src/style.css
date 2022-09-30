@@ -144,12 +144,39 @@ input[type='checkbox']::before {
 	content: attr(name);
 }
 
-.cursor[data-hover='true'] {
-	width: 2rem;
-	height: 2rem;
-	transition: 0.2s;
+#cursor {
+	--x: 0;
+	--y: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	top: 0;
+	left: 0;
+	width: 4rem;
+	height: 4rem;
+	transform: translate(calc(var(--x) + -50%), calc(var(--y) + -50%));
+	pointer-events: none;
+	transition: 0.05s transform;
+	mix-blend-mode: difference;
+}
+:root.dark #cursor div {
+	background-color: var(--primary);
+	border-color: var(--secondary);
 }
 
-.cursor[data-hover='true'] div {
-	background-color: transparent;
+#cursor div {
+	width: 50%;
+	height: 50%;
+	transition: 0.1s;
+}
+
+#cursor[data-hover='true'] div {
+	width: 100%;
+	height: 100%;
+	transition: 0.1s;
+}
+
+#cursor[data-hidden='true'] div {
+	opacity: 0;
+	transition: 0.1s;
 }

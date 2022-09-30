@@ -159,5 +159,36 @@ function isTouchDevice() {
 const isTouch = isTouchDevice()
 
 if (!isTouch) {
-	const cursor = document.querySelector('.cursor')
+	const cursor = document.getElementById('cursor')
+
+	const cursorEvents = () => {
+		document.addEventListener('mousemove', onMouseMove)
+		handleHoverEvents()
+	}
+
+	const handleHoverEvents = () => {
+		document.querySelectorAll('[data-hover="true"]').forEach((el) => {
+			el.addEventListener('mouseover', () =>
+				cursor.setAttribute('data-hover', 'true')
+			)
+			el.addEventListener('mouseout', () =>
+				cursor.setAttribute('data-hover', 'false')
+			)
+		})
+		document.querySelectorAll('.header').forEach((el) => {
+			el.addEventListener('mouseover', () =>
+				cursor.setAttribute('data-hidden', 'true')
+			)
+			el.addEventListener('mouseout', () =>
+				cursor.setAttribute('data-hidden', 'false')
+			)
+		})
+	}
+
+	const onMouseMove = (e) => {
+		cursor.style.setProperty('--x', e.clientX + 'px')
+		cursor.style.setProperty('--y', e.clientY + 'px')
+	}
+
+	cursorEvents()
 }
