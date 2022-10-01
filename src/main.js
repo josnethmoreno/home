@@ -167,7 +167,7 @@ if (!isTouch) {
 	}
 
 	const handleHoverEvents = () => {
-		document.querySelectorAll('[data-hover="true"]').forEach((el) => {
+		document.querySelectorAll('[data-cursor="hover"]').forEach((el) => {
 			el.addEventListener('mouseover', () =>
 				cursor.setAttribute('data-hover', 'true')
 			)
@@ -175,7 +175,8 @@ if (!isTouch) {
 				cursor.setAttribute('data-hover', 'false')
 			)
 		})
-		document.querySelectorAll('.header').forEach((el) => {
+
+		document.querySelectorAll('[data-cursor="hidden"]').forEach((el) => {
 			el.addEventListener('mouseover', () =>
 				cursor.setAttribute('data-hidden', 'true')
 			)

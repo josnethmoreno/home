@@ -178,5 +178,5 @@ input[type='checkbox']::before {
 
 #cursor[data-hidden='true'] div {
 	opacity: 0;
-	transition: 0.1s;
+	transition: 0.2s;
 }

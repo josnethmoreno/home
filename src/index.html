@@ -13,32 +13,33 @@
     <header
       class="w-full sticky top-0 flex h-[4.2rem] border-b border-[color:var(--secondary)] bg-[color:var(--primary)] z-30">
       <div class="hidden md:block w-full hover:bg-[color:var(--secondary)]">
-        <h1 class="hidden lg:flex items-center justify-end pr-4 w-full h-full">Josneth Moreno</h1>
+        <h1 class="hidden lg:flex items-center justify-end pr-4 w-full h-full cursor-none" data-cursor="hidden">
+          Josneth Moreno
+        </h1>
       </div>
       <nav
         class="relative flex justify-center items-center gap-6 w-full md:min-w-[544px] md:max-w-[544px] md:border-x border-[color:var(--secondary)] text-[color:var(--secondary)]">
-        <a href="#top" data-hover="true">Home</a>
-        <a href="#work" data-hover="true">Work</a>
-        <a href="#skills" data-hover="true">Skills</a>
-        <a href="#contact" data-hover="true">Contact</a>
+        <a href="#top" data-cursor="hover">Home</a>
+        <a href="#work" data-cursor="hover">Work</a>
+        <a href="#skills" data-cursor="hover">Skills</a>
+        <a href="#contact" data-cursor="hover">Contact</a>
         <button class="absolute right-2 w-6 aspect-square bg-[color:var(--secondary)] md:hidden"
           id="buttonTwo"></button>
       </nav>
       <div class="hidden md:block w-full">
-        <button class="w-full h-full hover:bg-[color:var(--secondary)]" id="button" data-hover="true"></button>
+        <button class="w-full h-full hover:bg-[color:var(--secondary)] cursor-none" id="button"
+          data-cursor="hidden"></button>
       </div>
     </header>
     <figure>
       <div class="container-md mx-auto max-w-[544px] border-x border-[color:var(--secondary)]" id="canvasContainer">
-        <img class="" src="./img/home.jpg" alt="home-background" id="homeImg">
+        <img class="" src="./img/home.jpg" alt="home-background" id="homeImg" />
       </div>
     </figure>
     <section id="home">
       <div class="container-md mx-auto max-w-[544px] border-x border-[color:var(--secondary)] px-4 md:px-6 py-8">
-        <p class="text-3xl font-light">
-          Me gusta crear interfaces <span class="font-semibold">estéticas</span>, <span
-            class="font-semibold">intuitivas</span>,
-          <span class="font-extralight italic">funcionales</span> y <span
+        <p class="text-3xl font-light"> Me gusta crear interfaces <span class="font-semibold">estéticas</span>, <span
+            class="font-semibold">intuitivas</span>, <span class="font-extralight italic">funcionales</span> y <span
             class="font-extralight italic">accesibles</span>, con una increíble <span class="font-semibold">experiencia
             digital</span>.
         </p>
@@ -46,13 +47,15 @@
     </section>
     <section id="work">
       <div class="border-y border-[color:var(--secondary)] text-center text-2xl">
-        <div class="header container-md mx-auto max-w-[544px] border-x border-[color:var(--secondary)] px-4 py-4">
+        <div
+          class="header container-md mx-auto max-w-[544px] border-x border-[color:var(--secondary)] px-4 py-4 cursor-none"
+          data-cursor="hidden">
           <h2 class="font-bold">WORK</h2>
         </div>
       </div>
       <div class="container-md mx-auto max-w-[544px] border-x border-[color:var(--secondary)] pt-8">
         <button class="toggle mx-auto flex border-4 border-[color:var(--secondary)] w-[94px] h-auto p-1" id="toggleWork"
-          data-value="ui" data-hover="true">
+          data-value="ui" data-cursor="hover">
           <div class="flex w-full">
             <span class="flex items-center justify-center w-1/2 aspect-square text-xs font-bold z-10">UI</span>
             <span class="flex items-center justify-center w-1/2 aspect-square text-xs font-bold z-10">DEV</span>
@@ -61,82 +64,11 @@
         <div class="mt-8" id="contentWork" data-content="ui">
           <div class="hidden">
             <div class="px-4 py-6 border-t border-[color:var(--secondary)]">
-              <a class="flex w-full justify-between group" href="#">
+              <a class="flex w-full justify-between group" href="#" data-cursor="hover">
                 <p class="inline-block font-medium">
                   <i class="circle inline-block w-2 aspect-square rounded-full bg-[color:var(--secondary)] mr-2"></i>
-                  Landibo <span class="hidden md:inline-block">| Home page portfolio UX/UI Designer's </span>
-                </p>
-                <svg
-                  class="w-6 h-6 inline-block md:text-[color:var(--primary)] md:group-hover:text-[color:var(--secondary)] rotate-[-45deg]"
-                  fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3">
-                  </path>
-                </svg>
-              </a>
-            </div>
-            <div class="px-4 py-6 border-t border-[color:var(--secondary)]">
-              <a class="flex w-full justify-between group" href="#">
-                <p class="inline-block font-medium">
-                  <i class="circle inline-block w-2 aspect-square rounded-full bg-[color:var(--secondary)] mr-2"></i>
-                  Singleton <span class="hidden md:inline-block"> | Home page portfolio for Developer's </span>
-                </p>
-                <svg
-                  class="w-6 h-6 inline-block md:text-[color:var(--primary)] md:group-hover:text-[color:var(--secondary)] rotate-[-45deg]"
-                  fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3">
-                  </path>
-                </svg>
-              </a>
-            </div>
-            <div class="px-4 py-6 border-t border-[color:var(--secondary)]">
-              <a class="flex w-full justify-between group" href="#">
-                <p class="inline-block font-medium">
-                  <i class="circle inline-block w-2 aspect-square rounded-full bg-[color:var(--secondary)] mr-2"></i>
-                  Emma <span class="hidden md:inline-block"> | Home page portfolio for Product designer's </span>
-                </p>
-                <svg
-                  class="w-6 h-6 inline-block md:text-[color:var(--primary)] md:group-hover:text-[color:var(--secondary)] rotate-[-45deg]"
-                  fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3">
-                  </path>
-                </svg>
-              </a>
-            </div>
-            <div class="px-4 py-6 border-t border-[color:var(--secondary)]">
-              <a class="flex w-full justify-between group" href="#">
-                <p class="inline-block font-medium">
-                  <i class="circle inline-block w-2 aspect-square rounded-full bg-[color:var(--secondary)] mr-2"></i>
-                  Orca <span class="hidden md:inline-block"> | Multi-purpose design system </span>
-                </p>
-                <svg
-                  class="w-6 h-6 inline-block md:text-[color:var(--primary)] md:group-hover:text-[color:var(--secondary)] rotate-[-45deg]"
-                  fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3">
-                  </path>
-                </svg>
-              </a>
-            </div>
-          </div>
-          <div class="hidden">
-            <div class="px-4 py-6 border-t border-[color:var(--secondary)]">
-              <a class="flex w-full justify-between group" href="#">
-                <p class="inline-block font-medium">
-                  <i class="circle inline-block w-2 aspect-square rounded-full bg-[color:var(--secondary)] mr-2"></i>
-                  Singleton <span class="hidden md:inline-block"> | A minimal portfolio template for developers </span>
-                </p>
-                <svg
-                  class="w-6 h-6 inline-block md:text-[color:var(--primary)] md:group-hover:text-[color:var(--secondary)] rotate-[-45deg]"
-                  fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3">
-                  </path>
-                </svg>
-              </a>
-            </div>
-            <div class="px-4 py-6 border-t border-[color:var(--secondary)]">
-              <a class="flex w-full justify-between group" href="#">
-                <p class="inline-block font-medium">
-                  <i class="circle inline-block w-2 aspect-square rounded-full bg-[color:var(--secondary)] mr-2"></i>
-                  Weather app <span class="hidden md:inline-block"> | App to view the weather conditions of cities
+                  Landibo
+                  <span class="hidden md:inline-block">| Home page portfolio UX/UI Designer's
                   </span>
                 </p>
                 <svg
@@ -148,10 +80,13 @@
               </a>
             </div>
             <div class="px-4 py-6 border-t border-[color:var(--secondary)]">
-              <a class="flex w-full justify-between group" href="#">
+              <a class="flex w-full justify-between group" href="#" data-cursor="hover">
                 <p class="inline-block font-medium">
                   <i class="circle inline-block w-2 aspect-square rounded-full bg-[color:var(--secondary)] mr-2"></i>
-                  Wordle game <span class="hidden md:inline-block"> | A clone of the wordle game </span>
+                  Singleton
+                  <span class="hidden md:inline-block">
+                    | Home page portfolio for Developer's
+                  </span>
                 </p>
                 <svg
                   class="w-6 h-6 inline-block md:text-[color:var(--primary)] md:group-hover:text-[color:var(--secondary)] rotate-[-45deg]"
@@ -162,10 +97,100 @@
               </a>
             </div>
             <div class="px-4 py-6 border-t border-[color:var(--secondary)]">
-              <a class="flex w-full justify-between group" href="#">
+              <a class="flex w-full justify-between group" href="#" data-cursor="hover">
                 <p class="inline-block font-medium">
                   <i class="circle inline-block w-2 aspect-square rounded-full bg-[color:var(--secondary)] mr-2"></i>
-                  Github Search Engine <span class="hidden md:inline-block"> | A github developer search engine. </span>
+                  Emma
+                  <span class="hidden md:inline-block">
+                    | Home page portfolio for Product designer's
+                  </span>
+                </p>
+                <svg
+                  class="w-6 h-6 inline-block md:text-[color:var(--primary)] md:group-hover:text-[color:var(--secondary)] rotate-[-45deg]"
+                  fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3">
+                  </path>
+                </svg>
+              </a>
+            </div>
+            <div class="px-4 py-6 border-t border-[color:var(--secondary)]">
+              <a class="flex w-full justify-between group" href="#" data-cursor="hover">
+                <p class="inline-block font-medium">
+                  <i class="circle inline-block w-2 aspect-square rounded-full bg-[color:var(--secondary)] mr-2"></i>
+                  Orca
+                  <span class="hidden md:inline-block">
+                    | Multi-purpose design system
+                  </span>
+                </p>
+                <svg
+                  class="w-6 h-6 inline-block md:text-[color:var(--primary)] md:group-hover:text-[color:var(--secondary)] rotate-[-45deg]"
+                  fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3">
+                  </path>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="hidden">
+            <div class="px-4 py-6 border-t border-[color:var(--secondary)]">
+              <a class="flex w-full justify-between group" href="#" data-cursor="hover">
+                <p class="inline-block font-medium">
+                  <i class="circle inline-block w-2 aspect-square rounded-full bg-[color:var(--secondary)] mr-2"></i>
+                  Singleton
+                  <span class="hidden md:inline-block">
+                    | A minimal portfolio template for developers
+                  </span>
+                </p>
+                <svg
+                  class="w-6 h-6 inline-block md:text-[color:var(--primary)] md:group-hover:text-[color:var(--secondary)] rotate-[-45deg]"
+                  fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3">
+                  </path>
+                </svg>
+              </a>
+            </div>
+            <div class="px-4 py-6 border-t border-[color:var(--secondary)]">
+              <a class="flex w-full justify-between group" href="#" data-cursor="hover">
+                <p class="inline-block font-medium">
+                  <i class="circle inline-block w-2 aspect-square rounded-full bg-[color:var(--secondary)] mr-2"></i>
+                  Weather app
+                  <span class="hidden md:inline-block">
+                    | App to view the weather conditions of cities
+                  </span>
+                </p>
+                <svg
+                  class="w-6 h-6 inline-block md:text-[color:var(--primary)] md:group-hover:text-[color:var(--secondary)] rotate-[-45deg]"
+                  fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3">
+                  </path>
+                </svg>
+              </a>
+            </div>
+            <div class="px-4 py-6 border-t border-[color:var(--secondary)]">
+              <a class="flex w-full justify-between group" href="#" data-cursor="hover">
+                <p class="inline-block font-medium">
+                  <i class="circle inline-block w-2 aspect-square rounded-full bg-[color:var(--secondary)] mr-2"></i>
+                  Wordle game
+                  <span class="hidden md:inline-block">
+                    | A clone of the wordle game
+                  </span>
+                </p>
+                <svg
+                  class="w-6 h-6 inline-block md:text-[color:var(--primary)] md:group-hover:text-[color:var(--secondary)] rotate-[-45deg]"
+                  fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3">
+                  </path>
+                </svg>
+              </a>
+            </div>
+            <div class="px-4 py-6 border-t border-[color:var(--secondary)]">
+              <a class="flex w-full justify-between group" href="#" data-cursor="hover">
+                <p class="inline-block font-medium">
+                  <i class="circle inline-block w-2 aspect-square rounded-full bg-[color:var(--secondary)] mr-2"></i>
+                  Github Search Engine
+                  <span class="hidden md:inline-block">
+                    | A github developer search engine.
+                  </span>
                 </p>
                 <svg
                   class="w-6 h-6 inline-block md:text-[color:var(--primary)] md:group-hover:text-[color:var(--secondary)] rotate-[-45deg]"
@@ -181,13 +206,15 @@
     </section>
     <section id="skills">
       <div class="border-y border-[color:var(--secondary)] text-center text-2xl">
-        <div class="header container-md mx-auto max-w-[544px] border-x border-[color:var(--secondary)] px-4 py-4">
+        <div
+          class="header container-md mx-auto max-w-[544px] border-x border-[color:var(--secondary)] px-4 py-4 cursor-none"
+          data-cursor="hidden">
           <h2 class="font-bold">SKILLS</h2>
         </div>
       </div>
       <div class="container-md mx-auto max-w-[544px] border-x border-[color:var(--secondary)] pt-8">
         <button class="toggle mx-auto flex border-4 border-[color:var(--secondary)] w-[94px] h-auto p-1"
-          id="toggleSkills" data-value="ui">
+          id="toggleSkills" data-value="ui" data-cursor="hover">
           <div class="flex w-full">
             <span class="flex items-center justify-center w-1/2 aspect-square text-xs font-bold z-10">UI</span>
             <span class="flex items-center justify-center w-1/2 aspect-square text-xs font-bold z-10">DEV</span>
@@ -265,43 +292,46 @@
     </section>
     <section id="contact">
       <div class="border-y border-[color:var(--secondary)] text-center text-2xl">
-        <div class="header container-md mx-auto max-w-[544px] border-x border-[color:var(--secondary)] px-4 py-4">
+        <div
+          class="header container-md mx-auto max-w-[544px] border-x border-[color:var(--secondary)] px-4 py-4 cursor-none"
+          data-cursor="hidden">
           <h2 class="font-bold">CONTACT</h2>
         </div>
       </div>
       <div class="container-md mx-auto max-w-[544px] border-x border-[color:var(--secondary)] px-4 py-8">
         <p class="text-3xl">
-          ¿Tienes algún proyecto en mente? <span class="font-bold">Contáctame!</span> Y
-          creemos juntos la siguiente <span class="font-semibold italic">experiencia digital.</span>
+          ¿Tienes algún proyecto en mente?
+          <span class="font-bold">Contáctame!</span> Y creemos juntos la
+          siguiente
+          <span class="font-semibold italic">experiencia digital.</span>
         </p>
         <form class="max-w-[242px] mx-auto mt-8 font-medium flex flex-col gap-4" id="form"
           action="https://getform.io/f/cca0a9d1-9f65-42d9-9a58-31ad17d6af1b" method="POST">
           <input
             class="w-full outline-none border-b-4 border-[color:var(--secondary)] placeholder:text-[color:var(--secondary)]"
-            type="text" id="name" name="name" placeholder="Nombre">
+            type="text" id="name" name="name" placeholder="Nombre" />
           <input
             class="w-full outline-none border-b-4 border-[color:var(--secondary)] placeholder:text-[color:var(--secondary)]"
-            type="email" id="email" name="email" placeholder="Email">
+            type="email" id="email" name="email" placeholder="Email" />
           <textarea
             class="w-full outline-none border-b-4 border-[color:var(--secondary)] placeholder:text-[color:var(--secondary)]"
             id="message" name="message" rows="3" placeholder="Mensaje"></textarea>
           <div class="flex flex-wrap gap-1">
-            <input type="checkbox" name="ui" id="ui">
-            <input type="checkbox" name="startup" id="startup">
-            <input type="checkbox" name="landing" id="landing">
-            <input type="checkbox" name="agency" id="agency">
-            <input type="checkbox" name="frontend" id="frontend">
-            <input type="checkbox" name="app" id="app">
-            <input type="checkbox" name="friends" id="friends">
+            <input type="checkbox" name="ui" id="ui" data-cursor="hover" />
+            <input type="checkbox" name="startup" id="startup" data-cursor="hover" />
+            <input type="checkbox" name="landing" id="landing" data-cursor="hover" />
+            <input type="checkbox" name="agency" id="agency" data-cursor="hover" />
+            <input type="checkbox" name="frontend" id="frontend" data-cursor="hover" />
+            <input type="checkbox" name="app" id="app" data-cursor="hover" />
+            <input type="checkbox" name="friends" id="friends" data-cursor="hover" />
           </div>
           <button
-            class="flex justify-between p-2 bg-[color:var(--secondary)] text-[color:var(--primary)] md:text-[color:var(--secondary)] md:hover:text-[color:var(--primary)]"
-            data-hover="true">
+            class="flex justify-between p-2 bg-[color:var(--secondary)] text-[color:var(--primary)] md:text-[color:var(--secondary)] md:hover:text-[color:var(--primary)] cursor-none"
+            data-cursor="hidden">
             Enviar
             <svg class="w-6 h-6 inline-block group-hover:rotate-[-45deg]" fill="none" stroke="currentColor"
               viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3">
-              </path>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
             </svg>
           </button>
 
@@ -312,23 +342,25 @@
     <footer class="border-t border-[color:var(--secondary)]">
       <div
         class="flex justify-between container-md mx-auto max-w-[544px] border-x border-[color:var(--secondary)] px-4 py-6">
-        <p class="text-xs"> Created by <span class="font-semibold">Josneth Moreno</span></p>
+        <p class="text-xs">
+          Created by <span class="font-semibold">Josneth Moreno</span>
+        </p>
         <div class="flex gap-3">
-          <a href="" data-hover="true">
+          <a href="" data-cursor="hover">
             <svg class="w-4" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <title>GitHub</title>
               <path fill="currentColor"
                 d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
             </svg>
           </a>
-          <a href="" data-hover="true">
+          <a href="" data-cursor="hover">
             <svg class="w-4" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <title>LinkedIn</title>
               <path fill="currentColor"
                 d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
             </svg>
           </a>
-          <a href="" data-hover="true">
+          <a href="" data-cursor="hover">
             <svg class="w-4" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <title>Telegram</title>
               <path fill="currentColor"
