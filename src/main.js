@@ -5,7 +5,7 @@ const buttonTwo = document.getElementById('buttonTwo')
 const homeImg = document.getElementById('homeImg')
 
 const changeHomeImg = (theme) => {
-	const img = theme === 'light' ? './img/home.jpg' : './img/home-invert.jpg'
+	const img = theme === 'light' ? '/home.jpg' : '/home-invert.jpg'
 	homeImg.src = img
 }
 
