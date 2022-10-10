@@ -2,12 +2,6 @@ import './style.css'
 
 const button = document.getElementById('button')
 const buttonTwo = document.getElementById('buttonTwo')
-const homeImg = document.getElementById('homeImg')
-
-const changeHomeImg = (theme) => {
-	const img = theme === 'light' ? '/home.jpg' : '/home-invert.jpg'
-	homeImg.src = img
-}
 
 const loadTheme = () => {
 	if (!localStorage.theme) {
@@ -15,7 +9,6 @@ const loadTheme = () => {
 	}
 	const theme = localStorage.theme
 	document.documentElement.classList.add(theme)
-	changeHomeImg(theme)
 }
 
 const changeTheme = () => {
@@ -23,13 +16,11 @@ const changeTheme = () => {
 		document.documentElement.classList.add('dark')
 		document.documentElement.classList.remove('light')
 		localStorage.theme = 'dark'
-		changeHomeImg(localStorage.theme)
 		return
 	}
 	document.documentElement.classList.add('light')
 	document.documentElement.classList.remove('dark')
 	localStorage.theme = 'light'
-	changeHomeImg(localStorage.theme)
 }
 
 button.addEventListener('click', changeTheme)
