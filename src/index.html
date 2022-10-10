@@ -5,6 +5,9 @@
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="/vite.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Josneth Moreno" />
+  <meta name="description" content="Hola soy Josneth Moreno, un UI Developer especialista en diseñar y desarrollar interfaces de usuario" />
+  <meta name="keywords" content="Josneth Moreno, UI Developer, Front End Developer, UI Designer, Desarrollador web, Desarrollador Front End, Diseñador de usuario" />
   <title>Josneth Moreno | Home Page</title>
 </head>
 
@@ -24,16 +27,16 @@
         <a href="#skills" data-cursor="hover">Skills</a>
         <a href="#contact" data-cursor="hover">Contact</a>
         <button class="absolute right-2 w-6 aspect-square bg-[color:var(--secondary)] md:hidden"
-          id="buttonTwo"></button>
+          id="buttonTwo" aria-label="change theme"></button>
       </nav>
       <div class="hidden md:block w-full">
         <button class="w-full h-full hover:bg-[color:var(--secondary)] cursor-none" id="button"
-          data-cursor="hidden"></button>
+          data-cursor="hidden" aria-label="change theme"></button>
       </div>
     </header>
     <figure>
       <div class="container-md mx-auto max-w-[544px] border-x border-[color:var(--secondary)]" id="canvasContainer">
-        <img class="w-100 h-auto" src="./img/home.jpg" alt="home-background" id="homeImg" />
+        <img class="w-100 h-auto" alt="home-background" id="homeImg" />
       </div>
     </figure>
     <section id="home">
@@ -335,7 +338,7 @@
           </div>
           <button
             class="flex justify-between p-2 bg-[color:var(--secondary)] text-[color:var(--primary)] md:text-[color:var(--secondary)] md:hover:text-[color:var(--primary)] cursor-none"
-            data-cursor="hidden">
+            data-cursor="hidden" type="submit" aria-label="Enviar mensaje">
             Enviar
             <svg class="w-6 h-6 inline-block group-hover:rotate-[-45deg]" fill="none" stroke="currentColor"
               viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
