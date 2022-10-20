@@ -14,22 +14,6 @@
 	--secondary: #fafafa;
 }
 
-h1 {
-	position: relative;
-}
-
-h1::before {
-	content: 'UI Designer and Frontend Dev';
-	position: absolute;
-	right: 1rem;
-	color: var(--primary);
-	opacity: 0;
-}
-
-div:hover > h1::before {
-	opacity: 1;
-}
-
 .header {
 	position: relative;
 	cursor: none;
@@ -70,7 +54,7 @@ div:hover > h1::before {
 }
 
 :root.dark img {
-	filter: invert(1);
+	filter: invert(13);
 }
 
 .toggle > div {
